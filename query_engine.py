@@ -46,8 +46,8 @@ def run_query_pipeline(df: pd.DataFrame, question: str, previous_context="None",
     prompt = build_data_prompt(question, columns, "prompts/sql_prompt.txt", previous_context)
     raw_response = query_gemini(prompt)
     
-    if "Error: Invalid Schema Requested" in raw_response:
-        return None, "Error: You requested data that is not in the schema. Please check the dataset columns."
+    if raw_response.startswith("Error:"):
+        return None, raw_response
         
     code = extract_code_block(raw_response)
     
