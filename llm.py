@@ -15,7 +15,7 @@ if not api_key and "GEMINI_API_KEY" in st.secrets:
 if api_key:
     genai.configure(api_key=api_key)
 
-def query_gemini(prompt: str, model_name="gemini-2.5-flash") -> str:
+def query_gemini(prompt: str, model_name="gemini-1.5-flash") -> str:
     """Core function to bounce a given raw prompt off the Gemini engine."""
     try:
         model = genai.GenerativeModel(model_name)
