@@ -31,7 +31,24 @@ What sets **V2** apart is the robust **200% Accuracy Engine**. We utilize a mult
 - **Textual Insights**: Real-time analyst-level bullet points interpreting the rendered data.
 - **Code Transparency Viewer**: UI features an expander component proving exact computations.
 
+## 🚀 Run on GitHub (Streamlit Cloud)
+
+You can run this dashboard live on the web for free!
+
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://streamlit.io/cloud)
+
+1. Go to [Streamlit Community Cloud](https://share.streamlit.io/).
+2. Click **"New app"**.
+3. Select this GitHub repository: `BomtOp/GFG-Hackhton-s-Project`.
+4. Set the Main file path to: `app.py`.
+5. **IMPORTANT:** Go to **Advanced settings...** -> **Secrets** and paste your `GEMINI_API_KEY`:
+   ```toml
+   GEMINI_API_KEY = "your-api-key-here"
+   ```
+6. Click **Deploy!** 💥
+
 ## 🛠️ How to run locally
+... (rest of the file)
 
 1. **Clone & Set up Environment**
 ```bash
